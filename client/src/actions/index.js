@@ -1,3 +1,5 @@
+import axios from "../apis"
+import history from '../history'
 import {
   SIGN_IN,
   SIGN_OUT,
@@ -7,7 +9,6 @@ import {
   EDIT_STREAM,
   DELETE_STREAM
 } from "./types"
-import axios from "../apis"
 
 export const signIn = userId => {
   return {
@@ -26,6 +27,8 @@ export const createStream = formValues => async (dispatch, getState) => {
 
   const response = await axios.post("/streams", { ...formValues, userId })
   dispatch({ type: CREATE_STREAM, payload: response.data })
+  //navigating the user back to stream list
+  history.push("/")
 }
 
 export const fetchStreams = () => async dispatch => {
