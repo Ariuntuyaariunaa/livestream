@@ -13,6 +13,12 @@ export class StreamEdit extends Component {
     if (!this.props.stream) {
       return <div>Loading...</div>
     }
+    if(!this.props.userId){
+      return <div>You are not authorized</div>
+    }
+    if(this.props.userId && this.props.userId !== this.props.stream.userId){
+      return <div>You are not authorized</div>
+    }
     return (
       <div>
         <h3>Edit Stream</h3>
@@ -28,7 +34,8 @@ export class StreamEdit extends Component {
   }
 }
 const mapStateToProps = (state, ownProps) => {
-  return { stream: state.streams[ownProps.match.params.id] }
+  return { stream: state.streams[ownProps.match.params.id],
+          userId: state.auth.userId}
 }
 export default connect(
   mapStateToProps,
