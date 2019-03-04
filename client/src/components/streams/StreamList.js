@@ -38,6 +38,7 @@ export class StreamList extends Component {
       return (
         <div style={{ textAlign: "right" }}>
           <Link to="/streams/new" className="ui button primary">
+            <i className="ui icon plus circle" />
             Create Stream
           </Link>
         </div>
