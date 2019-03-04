@@ -1,6 +1,6 @@
 # REACT STREAMER
 
-React App for watching live streams via flv.js over http-flv.
+React-Redux Web App for watching live streams via flv.js over http-flv.
 Backend is powered by Node-Media-Server (A Node.js implementation of RTMP/HTTP-FLV/WS-FLV/HLS/DASH/MP4 Media Server)
 https://github.com/illuspas/Node-Media-Server
 ## Usage
