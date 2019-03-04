@@ -1,12 +1,12 @@
 import React, { Component } from "react"
-import { Router, Route, Link } from "react-router-dom"
+import { Router, Route } from "react-router-dom"
 import StreamCreate from "./streams/StreamCreate"
 import StreamEdit from "./streams/StreamEdit"
 import StreamShow from "./streams/StreamShow"
 import StreamDelete from "./streams/StreamDelete"
 import StreamList from "./streams/StreamList"
 import Header from "./Header"
-import history from '../history'
+import history from "../history"
 class App extends Component {
   render() {
     return (
