@@ -17,7 +17,7 @@ Run both servers
 ```
 
 ## Publishing live streams
-### From OBS
+### From OBS Download from (https://obsproject.com/download)
 ```
 Settings -> Stream
 ```
