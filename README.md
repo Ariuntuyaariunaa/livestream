@@ -5,7 +5,7 @@ Streaming is handled by Node-Media-Server (A Node.js implementation of RTMP/HTTP
 https://github.com/illuspas/Node-Media-Server
 ## Usage
 ```
-https://github.com/rahularorar95/react-streamer
+git clone https://github.com/rahularorar95/react-streamer.git
 ```
 Run both servers
 
