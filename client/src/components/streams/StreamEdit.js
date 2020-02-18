@@ -21,7 +21,7 @@ export class StreamEdit extends Component {
     }
     return (
       <div>
-        <h3>Edit Stream</h3>
+        <h3>Дамжуулалтыг засах</h3>
         <StreamForm
           onSubmit={this.onSubmit}
           initialValues={{

@@ -10,7 +10,7 @@ class StreamCreate extends Component {
   render() {
     return (
       <div>
-        <h3>Create a Stream</h3>
+        <h3>Урсгал үүсгэх</h3>
         <StreamForm onSubmit={this.onSubmit} />
       </div>
     )

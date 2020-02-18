@@ -31,10 +31,10 @@ class StreamForm extends Component {
   render() {
     return (
       <form className="ui form error" onSubmit={this.props.handleSubmit(this.onSubmit)}>
-        <Field name="title" component={this.renderInput} label="Enter Title" />
-        <Field name="description" component={this.renderInput} label="Enter Description" />
+        <Field name="title" component={this.renderInput} label="гарчиг оруулна уу" />
+        <Field name="description" component={this.renderInput} label="Тайлбар оруулна уу" />
         <button type="submit" className="ui button primary">
-          Submit
+        Илгээх
         </button>
       </form>
     )

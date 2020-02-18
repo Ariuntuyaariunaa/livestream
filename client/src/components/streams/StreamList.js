@@ -12,10 +12,10 @@ export class StreamList extends Component {
       return (
         <div className="right floated content">
           <Link to={`/streams/edit/${stream.id}`} className="ui button primary">
-            Edit
+            Засварлах
           </Link>
           <Link to={`/streams/delete/${stream.id}`} className="ui button negative">
-            Delete
+            Устгах
           </Link>
         </div>
       )
@@ -43,7 +43,7 @@ export class StreamList extends Component {
         <div style={{ textAlign: "right" }}>
           <Link to="/streams/new" className="ui button primary">
             <i className="ui icon plus circle" />
-            Create Stream
+              Урсгал үүсгэх
           </Link>
         </div>
       )
@@ -53,7 +53,7 @@ export class StreamList extends Component {
   render() {
     return (
       <div>
-        <h2>Available Streams</h2>
+        <h2>Боломжтой шууд дамжуулалтын урсгалууд</h2>
         <div className="ui celled list">{this.renderList()}</div>
         {this.renderCreate()}
       </div>

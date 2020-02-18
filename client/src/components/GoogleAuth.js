@@ -33,14 +33,14 @@ export class GoogleAuth extends Component {
       return (
         <button className="ui red goggle button" onClick={this.onSignOutClick}>
           <i className="google icon" />
-          Sign Out
+          гарах
         </button>
       )
     } else {
       return (
         <button className="ui blue goggle button" onClick={this.onSignInClick}>
           <i className="google icon" />
-          Sign In with Google
+          Google-р нэвтрэх
         </button>
       )
     }

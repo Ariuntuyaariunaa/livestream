@@ -12,10 +12,10 @@ export class StreamDelete extends Component {
 
   renderContent() {
     if (!this.props.stream) {
-      return "Are you sure you want to delete this stream?"
+      return "Та энэ цацалтыг устгахдаа итгэлтэй байна уу?"
     }
 
-    return `Are you sure you want to delete this stream with title : ${this.props.stream.title} ?`
+    return `Та энэ цацалтыг гарчигаар устгахдаа итгэлтэй байна уу : ${this.props.stream.title} ?`
   }
 
   render() {
@@ -24,17 +24,17 @@ export class StreamDelete extends Component {
       <>
         {/*Similar to <React.Fragment>*/}
         <button onClick={() => this.props.deleteStream(id)} className="ui button negative">
-          Delete
+          Устгах
         </button>
         <Link to="/" className="ui button">
-          Cancel
+          Цуцлах
         </Link>
       </>
     )
 
     return (
       <Modal
-        title="Delete Stream"
+        title="Давжуулалтын мэдээлэл устгах"
         content={this.renderContent()}
         actions={actions}
         onDismiss={() => history.push("/")}
